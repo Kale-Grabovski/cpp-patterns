@@ -4,5 +4,5 @@
 
 class GreenCircle : public DrawApi {
 public:
-	void drawCircle(int radius, int x, int y) override;
+	virtual void drawCircle(int radius, int x, int y) override;
 };

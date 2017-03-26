@@ -5,5 +5,5 @@
 
 class RSAAlgorithm : public Algorithm {
 public:
-	std::string crypt(std::string text, std::string key) override;
+	virtual std::string crypt(std::string text, std::string key) override;
 };
