@@ -1,1 +1,1 @@
-# Fukin patterns on C++
+# Lovely patterns on C++
