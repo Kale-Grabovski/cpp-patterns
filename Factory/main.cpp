@@ -1,6 +1,5 @@
 #include <memory>
 #include <iostream>
-#include <exception>
 #include "Shape.h"
 #include "ShapeFactory.h"
 
@@ -8,17 +7,17 @@ using namespace std;
 
 int main () {
 	const shared_ptr<ShapeFactory> shapeFactory(new ShapeFactory());
-    const shared_ptr<Shape> circle = shapeFactory->getShape("Circle");
-    const shared_ptr<Shape> square = shapeFactory->getShape("Square");
     
     try {
+        const shared_ptr<Shape> circle = shapeFactory->getShape("Circle");
+        const shared_ptr<Shape> square = shapeFactory->getShape("Square");
+        //const shared_ptr<Shape> hz = shapeFactory->getShape("Hz");
+
         circle->draw();
         square->draw();
-        // Uncomment to throw an exception
-        //const shared_ptr<Shape> hz = shapeFactory->getShape("Hz");
         //hz->draw();
     } catch (std::exception& e) {
-        std::cout << "All went wrong: " << e.what();
+        cout << "All went wrong: " << e.what() << "\n";
     }
 
     return 0;
