@@ -1,7 +1,6 @@
 #pragma once
 
-class DrawApi
-{
+class DrawApi {
 public:
 	virtual void drawCircle(int radius, int x, int y) = 0;
 };

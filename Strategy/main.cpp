@@ -10,4 +10,6 @@ int main () {
 
 	std::cout << rsaAlg.crypt("Eba", "pzdc1111");
 	std::cout << desAlg.crypt("Zalupa", "hash1234");
+    
+    return 0;
 }

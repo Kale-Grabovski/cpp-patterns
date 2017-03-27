@@ -1,7 +1,6 @@
 #pragma once
 
-class Chief
-{
+class Chief {
 public:
 	virtual void makeBreakfast() const = 0;
 	virtual void makeDinner() const = 0;

@@ -12,4 +12,6 @@ int main () {
 	weatherData->registerObserver(currentConditions);
 	weatherData->registerObserver(smsInform);
 	weatherData->setMeasurements(100, 20.2);
+    
+    return 0;
 }

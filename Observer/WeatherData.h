@@ -5,8 +5,7 @@
 #include "Observable.h"
 #include "Observer.h"
 
-class WeatherData : public Observable
-{
+class WeatherData : public Observable {
 private:
 	float humidity;
 	float temperature;

@@ -2,8 +2,7 @@
 
 #include "Observer.h"
 
-class SmsInform : public Observer
-{
+class SmsInform : public Observer {
 public:
 	void update(float, float) const override;
 };

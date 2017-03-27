@@ -6,4 +6,6 @@ int main () {
 	chiefAdapter->makeBreakfast();
 	chiefAdapter->makeDinner();
 	chiefAdapter->makeSupper();
+    
+    return 0;
 }

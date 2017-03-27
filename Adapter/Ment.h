@@ -1,7 +1,6 @@
 #pragma once
 
-class Ment
-{
+class Ment {
 public:
 	virtual void kick() const;
 	virtual void shot() const;

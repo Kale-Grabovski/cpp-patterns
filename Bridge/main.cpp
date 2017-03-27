@@ -9,4 +9,6 @@ int main () {
 	
 	redCircle.draw();
 	greenCircle.draw();
+    
+    return 0;
 }

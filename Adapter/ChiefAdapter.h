@@ -4,8 +4,7 @@
 #include "Ment.h"
 #include "Chief.h"
 
-class ChiefAdapter : public Chief
-{
+class ChiefAdapter : public Chief {
 private:
 	std::shared_ptr<Ment> ment;
 public:
