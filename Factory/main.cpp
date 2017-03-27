@@ -6,7 +6,7 @@
 using namespace std;
 
 int main () {
-	const shared_ptr<ShapeFactory> shapeFactory(new ShapeFactory());
+    const shared_ptr<ShapeFactory> shapeFactory(new ShapeFactory());
     
     try {
         const shared_ptr<Shape> circle = shapeFactory->getShape("Circle");
