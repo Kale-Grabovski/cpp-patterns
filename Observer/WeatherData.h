@@ -14,6 +14,6 @@ private:
 public:
 	virtual void registerObserver(std::shared_ptr<Observer>) override;
 	virtual void removeObserver(std::shared_ptr<Observer>) override;
-	virtual void notify() override;
+	virtual void notify() const override;
 	void setMeasurements(float, float);
 };

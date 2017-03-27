@@ -13,8 +13,8 @@ void WeatherData::removeObserver(shared_ptr<Observer> obs) {
 	observers.erase(obs);
 }
 
-void WeatherData::notify() {
-	for (map<shared_ptr<Observer>, shared_ptr<Observer>>::iterator itr = observers.begin(), 
+void WeatherData::notify() const {
+	for (map<shared_ptr<Observer>, shared_ptr<Observer>>::const_iterator itr = observers.begin(), 
 		end = observers.end(); itr != end; ++itr ) {
 		itr->first->update(temperature, humidity);
 	}
