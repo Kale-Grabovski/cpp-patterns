@@ -3,9 +3,9 @@
 #include "headers/MealBuilder.h"
 
 int main () {
-	std::shared_ptr<MealBuilder> mealBuilder(std::make_shared<MealBuilder>());
-
-	std::shared_ptr<Meal> vegMeal = mealBuilder->prepareVegMeal();
+    std::shared_ptr<MealBuilder> mealBuilder(std::make_shared<MealBuilder>());
+    
+    std::shared_ptr<Meal> vegMeal = mealBuilder->prepareVegMeal();
     std::shared_ptr<Meal> meatMeal = mealBuilder->prepareNonVegMeal();
 
     std::cout << "Veg meal:\n";
