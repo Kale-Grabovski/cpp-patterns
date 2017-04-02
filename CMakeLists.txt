@@ -5,6 +5,7 @@ include_directories(
     "Adapter" 
     "Bridge"
     "Builder/headers"
+    "Command"
     "Composite"
     "Decorator"
     "Factory"
@@ -24,6 +25,9 @@ add_executable(Bridge/Bridge ${BRIDGE_SOURCES})
 
 file(GLOB BUILDER_SOURCES Builder/*.cpp)
 add_executable(Builder/Builder ${BUILDER_SOURCES})
+
+file(GLOB COMMAND_PATTERN Command/*.cpp)
+add_executable(Command/Command ${COMMAND_PATTERN})
 
 file(GLOB COMPOSITE_SOURCES Composite/*.cpp)
 add_executable(Composite/Composite ${COMPOSITE_SOURCES})
